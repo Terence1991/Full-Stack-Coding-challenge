@@ -10,12 +10,13 @@ margin: 20px;
   background-color: white;
 }
 .thought-bubble {
-  width: 50%;
+  width: 40%;
   border: 2px solid black;
   border-radius: 10px;
   margin: 0 auto;
   position: relative;
   padding: 20px;
+  background-color: #BED9F2; 
 }
 
 .thought-bubble:before {
@@ -36,7 +37,7 @@ margin: 20px;
   position: absolute;  
   left: 20px;
   bottom: -10px;
-  border-color: white transparent;
+  border-color:#BED9F2;
   border-style: solid;
   border-width: 10px 10px 0 0;
   display: block;
@@ -180,31 +181,66 @@ margin: 20px;
 /* end of input css */
 
 /* Chat  input */
-
 body {
-	background-color: turquoise
-}
+	background-color: #f1f1f1;
+	font-family: Helvetica,Arial,Verdana;
 
-#root {
-	display: flex;
+}
+h1 {
+	color: green;
+	text-align: center;
+}
+.redfamily {
+	color: red;	
+}
+.search-box,.close-icon,.search-wrapper {
 	position: relative;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-	height: 100vh;
+	padding: 10px;
 }
-
-
-.textarea {
-	box-sizing: border-box;
-	border: none;
-	border-radius: 3px;
-	resize: none;
-	font-size: 20px;
-	line-height: 24px;
-	overflow: auto;
-	height: auto;
-	padding: 8px;
-	box-shadow: 0px 4px 10px -8px black;
-	
-  }
+.search-wrapper {
+	width: 500px;
+	margin: auto;
+	margin-top: 50px;
+}
+.search-box {
+	width: 80%;
+	border: 1px solid #ccc;
+  outline: 0;
+  border-radius: 15px;
+}
+.search-box:focus {
+	box-shadow: 0 0 15px 5px #b0e0ee;
+	border: 2px solid #bebede;
+}
+.close-icon {
+	border:1px solid transparent;
+	background-color: transparent;
+	display: inline-block;
+	vertical-align: middle;
+  outline: 0;
+  cursor: pointer;
+}
+.close-icon:after {
+	content: "X";
+	display: block;
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	background-color: #FA9595;
+	z-index:1;
+	right: 35px;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	padding: 2px;
+	border-radius: 50%;
+	text-align: center;
+	color: white;
+	font-weight: normal;
+	font-size: 12px;
+	box-shadow: 0 0 2px #E50F0F;
+	cursor: pointer;
+}
+.search-box:not(:valid) ~ .close-icon {
+	display: none;
+}
