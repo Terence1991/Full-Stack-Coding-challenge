@@ -8,6 +8,11 @@ margin: 20px;
 
 .bubble {
   background-color: white;
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  min-width: 100%;
+  min-height: 100%
 }
 .thought-bubble {
   width: 40%;
@@ -243,4 +248,20 @@ h1 {
 }
 .search-box:not(:valid) ~ .close-icon {
 	display: none;
+}
+
+/*    title  */
+.element--dashed {
+  border-style: solid;
+  box-sizing: border-box;
+  width: 50%;
+  float: left;
+}
+
+.titleText {
+    font-weight: normal;
+    text-align: center; 
+    letter-spacing:2px;
+    text-shadow:1px 0 0 currentColor,2px 0 0 currentColor;
+  
 }

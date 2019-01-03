@@ -6,7 +6,7 @@ import Chat from './Chat.js'
 const Input = () => {
   return (
     <div className='Input'>
-    <div className="thought-bubble bubble">
+    <div className="thought-bubble">
     <span className='title'>
     <p className='chat'> The Chat box</p>
     </span>

@@ -9,9 +9,9 @@ import "./index.css"
 const App = () => {
   return (
   <div className='bubble'>
-      <ThoughtBubble /> 
-      <Title/>
-      <Input/>
+        <Title/>
+        <Input/>
+        <ThoughtBubble /> 
     </div>
    ); 
 

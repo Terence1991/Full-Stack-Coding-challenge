@@ -2,8 +2,10 @@ import React from "react"
 
 const Title = () => {
   return (
-    <div className="title"> 
-      <textarea>The Wall</textarea>
+    <div className="element element--dashed"> 
+      <span className='titleSpan'>
+        <p className="titleText"> The Wall</p>
+      </span>
     </div>
   )
 }
