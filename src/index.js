@@ -5,6 +5,7 @@ import Title from "./Title.js"
 import Input from "./Input.js"
 import "./index.css"
 
+
 const App = () => {
   return (
   <div className='bubble'>
